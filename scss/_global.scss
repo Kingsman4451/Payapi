@@ -1,0 +1,36 @@
+.body-bg {
+  background-color: $section-bg;
+  background-image: url("../img/body-bg.png");
+  background-position: calc(50% + 450px) calc(0% - 170px);
+  background-repeat: no-repeat;
+  background-size: 780px;
+}
+
+
+@include breakpoint-down(1024px) {
+  .body-bg {
+    background-size: 1150px;
+    background-position: 50% calc(0% - 700px);
+  }
+}
+
+@include breakpoint-down(768px) {
+  .body-bg {
+    background-size: 949px;
+    background-position: 50% calc(0% - 650px);
+  }
+}
+
+@include breakpoint-down(575px) {
+  .body-bg {
+    background-size: 800px;
+    background-position: 50% calc(0% - 520px);
+  }
+}
+
+@include breakpoint-down(425px) {
+  .body-bg {
+    background-size: 780px;
+    background-position: 50% calc(0% - 550px);
+  }
+}
