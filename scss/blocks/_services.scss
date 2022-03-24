@@ -1,0 +1,134 @@
+/* SERVICES */
+.services__list {
+  @include flex(flex-start, space-between);
+  @include list-no-style;
+  gap: 10px;
+}
+
+.services__item {
+  max-width: 350px;
+  text-align: center;
+  &:nth-child(1)::before {
+    display: block;
+    position: relative;
+    z-index: 100;
+    width: 106px;
+    height: 106px;
+    background-color: $san-juan-blue;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    border-radius: 50%;
+    background-image: url("../img/services-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 50px;
+    content: "";
+  }
+  &:nth-child(2)::before {
+    display: block;
+    position: relative;
+    z-index: 100;
+    width: 106px;
+    height: 106px;
+    background-color: $san-juan-blue;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    border-radius: 50%;
+    background-image: url("../img/services-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+    content: "";
+  }
+  &:nth-child(3)::before {
+    display: block;
+    position: relative;
+    z-index: 100;
+    width: 106px;
+    height: 106px;
+    background-color: $san-juan-blue;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    border-radius: 50%;
+    background-image: url("../img/services-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 26px;
+    content: "";
+  }
+}
+
+.services__heading {
+  font-size: $font-size-minmedium;
+  line-height: 25px;
+  color: $san-juan-blue;
+  letter-spacing: -0.14px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.services__text {
+  font-size: $font-size-small;
+  line-height: 25px;
+  letter-spacing: -0.12px;
+  color: $light-san-juan-blue;
+  margin: 0;
+}
+
+
+@include breakpoint-down(768px) {
+  .services__item {
+    &:nth-child(1)::before {
+      width: 88px;
+      height: 88px;
+      background-size: 40px 50px;
+      content: "";
+    }
+    &:nth-child(2)::before {
+      z-index: 100;
+      width: 88px;
+      height: 88px;
+      background-size: 40px 40px;
+      content: "";
+    }
+    &:nth-child(3)::before {
+      z-index: 100;
+      width: 88px;
+      height: 88px;
+      background-size: 40px 26px;
+      content: "";
+    }
+  }
+}
+
+
+@include breakpoint-down(680px) {
+  .services__list {
+    @include flex(center, space-between);
+    flex-direction: column;
+  }
+
+  .services__item {
+    max-width: 550px;
+    &:nth-child(1)::before {
+      width: 106px;
+      height: 106px;
+      background-size: 33px 41px;
+      content: "";
+    }
+    &:nth-child(2)::before {
+      z-index: 100;
+      width: 106px;
+      height: 106px;
+      background-size: 33px 33px;
+      content: "";
+    }
+    &:nth-child(3)::before {
+      z-index: 100;
+      width: 106px;
+      height: 106px;
+      background-size: 33px 22px;
+      content: "";
+    }
+  }
+}
