@@ -7,7 +7,7 @@
   <title>Payapi</title>
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body>
+<body class="body-bg">
   <!-- =================== HEADER =================== -->
   <header class="header">
     <div class="container">
@@ -38,5 +38,29 @@
     </div>
   </header>
   <!-- =================== /HEADER =================== -->
+
+  <main>
+  <!-- =================== /HERO =================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <h1 class="visually-hidden">Building free APIs</h1>
+        <div class="hero__content">
+          <h2 class="hero__heading">
+            Start building with our APIs for absolutely free.
+          </h2>
+          <form class="contact" action="https://echo.htmlacademy.ru" method="POST">
+            <input class="contact__email" id="email" type="email" name="client_email" placeholder="Enter email address" required>
+            <button class="button contact__btn" type="submit">Schedule a Demo</button>
+            <label class="contact__label" for="email">Have any questions? <span class="contact__label--bold">Contact Us</span></label>
+          </form>
+        </div>
+        <img class="hero__img" src="./img/hero-img.png" alt="Phone" width="419" height="660" 
+        srcset="./img/hero-img.png 1x, ./img/hero-img@2x.png 2x">
+      </div>
+    </div>
+  </section>
+  <!-- =================== HERO =================== -->
+  </main>
 </body>
 </html>
