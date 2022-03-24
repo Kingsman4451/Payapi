@@ -17,14 +17,14 @@
 @include breakpoint-down(768px) {
   .body-bg {
     background-size: 949px;
-    background-position: 50% calc(0% - 650px);
+    background-position: 50% calc(0% - 670px);
   }
 }
 
 @include breakpoint-down(575px) {
   .body-bg {
     background-size: 800px;
-    background-position: 50% calc(0% - 520px);
+    background-position: 50% calc(0% - 550px);
   }
 }
 
