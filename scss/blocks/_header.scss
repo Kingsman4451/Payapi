@@ -1,0 +1,38 @@
+/* HEADER */
+.header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $section-bg
+}
+
+.header__inner {
+  @include flex(center, space-between);
+}
+
+.header__left {
+  @include flex(center, space-between)
+}
+
+.header__burger-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+.header__burger-img {
+  width: 28px;
+  height: 17px;
+}
+
+
+@include breakpoint-down(680px) {
+  .header__burger-btn {
+    display: block;
+  }
+}
+
+@include breakpoint-down(425px) {
+  .header__burger-img {
+    width: 24px;
+    height: 100%;
+  }
+}
