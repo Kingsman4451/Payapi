@@ -76,12 +76,19 @@
     margin-top: 20px;
   }
 }
-@include breakpoint-down(575px) {
+@include breakpoint-down(425px) {
   .contact {
     max-width: 327px;
   }
+
   .contact__label {
     margin-top: 24px;
     margin-right: 0;
+  }
+}
+
+@include breakpoint-down(345px) {
+  .contact {
+    max-width: 290px;
   }
 }
