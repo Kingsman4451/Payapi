@@ -1,0 +1,87 @@
+/* CONTACT */
+
+.contact__email {
+  width: 310px;
+  font-size: $font-size-small;
+  line-height: 18px;
+  font-weight: 700;
+  color: $san-juan-blue;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  padding-left: 27px;
+  padding-right: 40px;
+  background-color: $link-white;
+  border: none;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  outline: none;
+  &::placeholder {
+    color: $san-juan-blue;
+    opacity: 0.5;
+  }
+}
+
+
+.contact__btn {
+  display: inline-block;
+  position: relative;
+  left: -40px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+
+.contact__label {
+  display: block;
+  font-size: $font-size-small;
+  color: $light-san-juan-blue;
+  margin-top: 5px;
+  margin-left: 25px;
+  &--bold {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+
+
+
+@include breakpoint-down(1024px) {
+  .contact__label {
+    margin-left: 0;
+    margin-top: 16px;
+    margin-right: 40px;
+  }
+}
+
+@include breakpoint-down(768px) {
+  .contact__email {
+    margin-left: 20px;
+  }
+}
+
+
+@include breakpoint-down(575px) {
+  .contact {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .contact__email {
+    width: 100%;
+    margin-left: 0;
+  }
+  .contact__btn {
+    width: 100%;
+    display: block;
+    left: 0;
+    margin-top: 20px;
+  }
+}
+@include breakpoint-down(575px) {
+  .contact {
+    max-width: 327px;
+  }
+  .contact__label {
+    margin-top: 24px;
+    margin-right: 0;
+  }
+}
