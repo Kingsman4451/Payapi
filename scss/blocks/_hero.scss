@@ -30,7 +30,7 @@
 
 
 
-@include breakpoint-down(1024px) {
+@include breakpoint-down(900px) {
   .hero {
     padding-bottom: 100px;
   }
