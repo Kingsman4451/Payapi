@@ -1,6 +1,7 @@
 /* READY SECTION */
 .ready {
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-bottom: 76px;
 }
 .ready__inner {
   @include flex(center, space-between)
