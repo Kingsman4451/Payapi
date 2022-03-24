@@ -1113,3 +1113,133 @@ body {
     font-size: 32px;
   }
 }
+
+/* SIMPLE UI */
+.simple {
+  padding: 140px 0;
+  background-image: url("../img/body-bg.png");
+  background-repeat: no-repeat;
+  background-size: 780px;
+  background-position: calc(50% + 730px);
+}
+
+.simple__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.simple__content {
+  max-width: 445px;
+}
+
+.simple__heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+  letter-spacing: -0.37px;
+  color: #36536b;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.simple__text {
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+  margin: 0;
+}
+
+.simple__images {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+
+.simple__img {
+  border-radius: 35px;
+  -webkit-box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+          box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+}
+
+@media only screen and (max-width: 1050px) {
+  .simple {
+    padding: 120px 0;
+    background-image: none;
+  }
+  .simple__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .simple__content {
+    max-width: 573px;
+    text-align: center;
+  }
+  .simple__images {
+    margin-bottom: 48px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .simple {
+    padding: 100px 0;
+  }
+  .simple__img {
+    width: 168px;
+    height: 320px;
+    border-radius: 25px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .simple__heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .simple__heading {
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.28px;
+  }
+  .simple__img {
+    width: 152px;
+    height: 290px;
+    border-radius: 25px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .simple {
+    padding: 80px 0;
+  }
+  .simple__images {
+    gap: 25px;
+  }
+  .simple__img {
+    width: 130px;
+    height: 100%;
+    border-radius: 18px;
+  }
+}
