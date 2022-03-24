@@ -39,12 +39,23 @@
 .partners__btn {
   font-size: $font-size-small;
   line-height: 18px;
+  font-weight: 700;
   letter-spacing: -0.12px;
   color: $link-white;
   text-decoration: none;
   padding: 15px 32px;
   border: 1px solid $link-white;
   border-radius: 24px;
+  transition: color 0.3s ease,
+              background-color 0.3s ease;
+  &:hover {
+    color: $mirage-blue;
+    background-color: rgba(251, 252, 254, 0.65);
+  }
+  &:active {
+    color: $mirage-blue;
+    background-color: $link-white;
+  }
 }
 
 .partners__list {
@@ -196,6 +207,4 @@
     width: 113px;
     height: 22px;
   }
-
-  
 }

@@ -817,12 +817,25 @@ body {
 .partners__btn {
   font-size: 15px;
   line-height: 18px;
+  font-weight: 700;
   letter-spacing: -0.12px;
   color: #fbfcfe;
   text-decoration: none;
   padding: 15px 32px;
   border: 1px solid #fbfcfe;
   border-radius: 24px;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.partners__btn:hover {
+  color: #1b262f;
+  background-color: rgba(251, 252, 254, 0.65);
+}
+
+.partners__btn:active {
+  color: #1b262f;
+  background-color: #fbfcfe;
 }
 
 .partners__list {
