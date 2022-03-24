@@ -384,3 +384,151 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+.button {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #fbfcfe;
+  padding: 15px 25px;
+  background-color: #ba4270;
+  border: none;
+  border-radius: 24px;
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+          box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #b6597d;
+}
+
+.button:active {
+  background-color: #da6d97;
+}
+
+@media only screen and (max-width: 680px) {
+  .button {
+    display: none;
+  }
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo__img {
+  display: block;
+  width: 135px;
+  height: 38px;
+}
+
+@media only screen and (max-width: 425px) {
+  .logo__img {
+    width: 120px;
+    height: 100%;
+  }
+}
+
+/* NAVBAR */
+.navbar {
+  margin-left: 64px;
+}
+
+.navbar__navlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+}
+
+.navbar__link {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #36536b;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.navbar__link:hover {
+  opacity: 0.9;
+}
+
+.navbar__link:active {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 680px) {
+  .navbar {
+    display: none;
+  }
+}
+
+/* HEADER */
+.header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #edf3f8;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__burger-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+.header__burger-img {
+  width: 28px;
+  height: 17px;
+}
+
+@media only screen and (max-width: 680px) {
+  .header__burger-btn {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .header__burger-img {
+    width: 24px;
+    height: 100%;
+  }
+}
