@@ -7,7 +7,7 @@
 }
 
 
-@include breakpoint-down(1024px) {
+@include breakpoint-down(900px) {
   .body-bg {
     background-size: 1150px;
     background-position: 50% calc(0% - 700px);

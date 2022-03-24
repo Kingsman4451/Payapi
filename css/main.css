@@ -385,7 +385,7 @@ body {
   background-size: 780px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 900px) {
   .body-bg {
     background-size: 1150px;
     background-position: 50% calc(0% - 700px);
