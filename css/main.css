@@ -767,3 +767,217 @@ body {
     width: 220px;
   }
 }
+
+/* PARTNERS */
+.partners {
+  background-color: #1b262f;
+  padding: 100px 0;
+  background-image: url("../img/body-bg.png");
+  background-size: 780px;
+  background-repeat: no-repeat;
+  background-position: calc(50% - 570px) calc(0% - 350px);
+}
+
+.partners__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partners__content {
+  max-width: 450px;
+}
+
+.partners__heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+  letter-spacing: -0.37px;
+  color: #fbfcfe;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.partners__text {
+  font-style: 15px;
+  line-height: 28px;
+  color: #fbfcfe;
+  opacity: 0.7;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.partners__btn {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.12px;
+  color: #fbfcfe;
+  text-decoration: none;
+  padding: 15px 32px;
+  border: 1px solid #fbfcfe;
+  border-radius: 24px;
+}
+
+.partners__list {
+  max-width: 536px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 39px;
+}
+
+.partners__link {
+  display: inline-block;
+}
+
+.partners__img-tesla {
+  display: block;
+  width: 129px;
+  height: 17px;
+}
+
+.partners__img-microsoft {
+  display: block;
+  width: 145px;
+  height: 31px;
+}
+
+.partners__img-hp {
+  display: block;
+  width: 140px;
+  height: 27px;
+}
+
+.partners__img-oracle {
+  display: block;
+  width: 131px;
+  height: 17px;
+}
+
+.partners__img-google {
+  display: block;
+  width: 96px;
+  height: 33px;
+}
+
+.partners__img-nvidia {
+  display: block;
+  width: 137px;
+  height: 26px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .partners {
+    background-size: 980px;
+    background-position: 50% calc(0% - 720px);
+  }
+  .partners__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .partners__content {
+    max-width: 600px;
+    text-align: center;
+  }
+  .partners__list {
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .partners {
+    padding: 88px 0;
+    background-size: 780px;
+    background-position: 50% calc(0% - 550px);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .partners__heading {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+  .partners__list {
+    max-width: 370px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 60px;
+  }
+  .partners__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .partners {
+    padding: 80px 0;
+    background-position: 50% calc(0% - 600px);
+  }
+  .partners__heading {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+  .partners__text {
+    margin-bottom: 76px;
+  }
+  .partners__list {
+    max-width: 280px;
+    margin-bottom: 56px;
+  }
+  .partners__item:nth-child(2n) {
+    margin-left: 10px;
+  }
+  .partners__img-tesla {
+    width: 107px;
+    height: 15px;
+  }
+  .partners__img-microsoft {
+    width: 120px;
+    height: 26px;
+  }
+  .partners__img-hp {
+    width: 115px;
+    height: 22px;
+  }
+  .partners__img-oracle {
+    width: 108px;
+    height: 14px;
+  }
+  .partners__img-google {
+    width: 79px;
+    height: 27px;
+  }
+  .partners__img-nvidia {
+    width: 113px;
+    height: 22px;
+  }
+}
