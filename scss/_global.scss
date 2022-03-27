@@ -6,6 +6,13 @@
   background-size: 780px;
 }
 
+.pricing-body {
+  background-color: $section-bg;
+  background-image: url("../img/body-bg.png");
+  background-position: calc(50% + 450px) calc(0% - 530px);
+  background-repeat: no-repeat;
+  background-size: 780px;
+}
 
 @include breakpoint-down(900px) {
   .body-bg {

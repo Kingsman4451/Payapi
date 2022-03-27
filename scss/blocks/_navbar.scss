@@ -25,6 +25,9 @@
   }
 }
 
+.active {
+  opacity: 1;
+}
 
 
 @include breakpoint-down(680px) {
