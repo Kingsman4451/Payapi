@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payapi/About</title>
-  <link rel="icon" href="./img/favicon.svg">
+  <title>Payapi/Contact Us</title>
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/svg">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="pricing-body">
@@ -23,10 +23,10 @@
                 <a class="navbar__link" href="pricing.html">Pricing</a>
               </li>
               <li class="navbar__item">
-                <a class="navbar__link active" href="#">About</a>
+                <a class="navbar__link" href="about.html">About</a>
               </li>
               <li class="navbar__item">
-                <a class="navbar__link" href="contact.html">Contact</a>
+                <a class="navbar__link active" href="#">Contact</a>
               </li>
             </ul>
           </nav>
@@ -39,70 +39,61 @@
     </div>
   </header>
   <!-- =================== /HEADER =================== -->
+  
+  <main>
+    <section class="contact-us">
+      <div class="container">
+        <div class="contact-us__inner">
+          <h2 class="contact-us__heading">
+            Submit a help request and we’ll get in touch shortly.
+          </h2>
+          <div class="contact-us__content">
+            <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+              <input class="form__name" type="text" aria-label="client name" name="client_name" placeholder="Name" required>
+              <input class="form__email" type="email" aria-label="client email" name="client_email" placeholder="Email Address" required>
+              <input class="form__company-name" type="text" aria-label="company-name" name="company-name" placeholder="Company Name" required>
+              <input class="form__title" type="text" aria-label="client title" name="client_title" placeholder="Title" required>
+              <textarea class="form__textarea" placeholder="Message" aria-label="Message" name="client_message" cols="30" rows="10" required></textarea>
 
-<main>
-  <!-- =================== ABOUT =================== -->
-  <section class="about">
-    <div class="container">
-      <div class="about__inner">
-        <h2 class="about__heading">
-          We empower innovators by delivering access to the financial system
-        </h2>
-        <ul class="about__list">
-          <li class="about__item">
-            <h3 class="about__item-title">Our Vision</h3>
-            <p class="about__item-text">
-              Our main goal is to build beautiful consumer experiences along with developer-friendly infrastructure. The result is an intelligent tool that gives everyone the ability to create amazing products that solve big problems. We are deeply focused on democratizing financial services through technology. 
-            </p>
-          </li>
-          <li class="about__item">
-            <h3 class="about__item-title">Our Business</h3>
-            <p class="about__item-text">
-              At the core of our platform is the technical infrastructure APIs that connect consumers. Our innovative product provides key insights for businesses and individuals, as well as robust reporting for traditional financial institutions and developers. 
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <div class="about__center"></div>
-  <section>
-    <div class="container">
-      <div class="about__inner">
-        <ul class="about__info">
-          <li class="about__info-item">
-            <p class="about__info-text">Team Members</p>
-            <p class="about__info-amount">300+</p>
-          </li>
-          <li class="about__info-item">
-            <p class="about__info-text">Offices in the US</p>
-            <p class="about__info-amount">3</p>
-          </li>
-          <li class="about__info-item">
-            <p class="about__info-text">Transactions analyzed</p>
-            <p class="about__info-amount">10M+</p>
-          </li>
-        </ul>
-        <ul class="about__list">
-          <li class="about__item">
-            <h3 class="about__item-title">The Culture</h3>
-            <p class="about__item-text">
-              We strongly believe there's always an opportunity to learn from each other outside of day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. We always value cross-team collaboration and diversity of thought, no matter the job title.
-            </p>
-          </li>
-          <li class="about__item">
-            <h3 class="about__item-title">The People</h3>
-            <p class="about__item-text">
-              We're all passionate about building a more efficient and inclusive financial infrastructure together. At PayAPI, we have diverse backgrounds and skills.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!-- =================== /ABOUT =================== -->
+              <label class="form__label" for="checkbox">
+                Stay up-to-date with company announcements and updates to our API
+                <input id="checkbox" class="form__checkbox" type="checkbox" value="stay_up">
+                <span class="form__checkbox-span"></span>
+              </label>
 
-  <!-- =================== READY SECTION =================== -->
+              <button class="form__btn" type="submit">Submit</button>
+            </form>
+            <div class="contact-us__right">
+              <h3 class="contact-us__right-title">
+                Join the thousands of innovators already building with us
+              </h3>
+              <ul class="cotact-us__list">
+                <li class="contact-us__item">
+                  <img class="contact-us__tesla" src="./img/contact-partner-1.png" alt="Tesla" width="130" height="17" srcset="./img/contact-partner-1.png 1x, ./img/contact-partner-1@2x.png 2x">
+                </li>
+                <li class="contact-us__item">
+                  <img class="contact-us__microsoft" src="./img/contact-partner-2.png" alt="Microsoft" width="146" height="35" srcset="./img/contact-partner-2.png 1x, ./img/contact-partner-2@2x.png 2x">
+                </li>
+                <li class="contact-us__item">
+                  <img class="contact-us__hp" src="./img/contact-partner-3.png" alt="HP" width="141" height="27" srcset="./img/contact-partner-3.png 1x, ./img/contact-partner-3@2x.png 2x">
+                </li>
+                <li class="contact-us__item">
+                  <img class="contact-us__oracle" src="./img/contact-partner-4.png" alt="Oracle" width="132" height="17" srcset="./img/contact-partner-4.png 1x, ./img/contact-partner-4@2x.png 2x">
+                </li>
+                <li class="contact-us__item">
+                  <img class="contact-us__google" src="./img/contact-partner-5.png" alt="Google" width="96" height="33" srcset="./img/contact-partner-5.png 1x, ./img/contact-partner-5@2x.png 2x">
+                </li>
+                <li class="contact-us__item">
+                  <img class="contact-us__nvidia" src="./img/contact-partner-6.png" alt="Nvidia" width="138" height="26" srcset="./img/contact-partner-6.png 1x, ./img/contact-partner-6@2x.png 2x">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- =================== READY SECTION =================== -->
   <section class="ready">
     <div class="container">
       <div class="ready__inner">
@@ -117,9 +108,9 @@
     </div>
   </section>
 <!-- =================== /READY SECTION =================== -->
-</main>
+  </main>
 
-<!-- =================== FOOTER =================== -->
+  <!-- =================== FOOTER =================== -->
 <footer class="footer">
   <div class="container">
     <div class="footer__inner">

@@ -1,0 +1,202 @@
+.form {
+  max-width: 445px;
+}
+.form__name {
+  width: 100%;
+  display: block;
+  font-size: $font-size-small;
+  line-height: 25px;
+  color: $san-juan-blue;
+  padding-left: 20px;
+  padding-bottom: 17px;
+  margin-bottom: 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(54, 83, 107, 0.5);
+  outline: none;
+  &::placeholder {
+    color: rgba(54, 83, 107, 0.5);
+  }
+}
+.form__email {
+  display: block;
+  width: 100%;
+  display: block;
+  font-size: $font-size-small;
+  line-height: 25px;
+  color: $san-juan-blue;
+  padding-left: 20px;
+  padding-bottom: 17px;
+  margin-bottom: 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(54, 83, 107, 0.5);
+  outline: none;
+  &::placeholder {
+    color: rgba(54, 83, 107, 0.5);
+  }
+}
+.form__company-name {
+  display: block;
+  width: 100%;
+  display: block;
+  font-size: $font-size-small;
+  line-height: 25px;
+  color: $san-juan-blue;
+  padding-left: 20px;
+  padding-bottom: 17px;
+  margin-bottom: 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(54, 83, 107, 0.5);
+  outline: none;
+  &::placeholder {
+    color: rgba(54, 83, 107, 0.5);
+  }
+}
+.form__title {
+  display: block;
+  width: 100%;
+  display: block;
+  font-size: $font-size-small;
+  line-height: 25px;
+  color: $san-juan-blue;
+  padding-left: 20px;
+  padding-bottom: 17px;
+  margin-bottom: 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(54, 83, 107, 0.5);
+  outline: none;
+  &::placeholder {
+    color: rgba(54, 83, 107, 0.5);
+  }
+}
+.form__textarea {
+  resize: none;
+  display: block;
+  width: 100%;
+  height: 89px;
+  display: block;
+  font-size: $font-size-small;
+  line-height: 25px;
+  color: $san-juan-blue;
+  padding-left: 20px;
+  padding-bottom: 17px;
+  margin-bottom: 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(54, 83, 107, 0.5);
+  outline: none;
+  &::placeholder {
+    color: rgba(54, 83, 107, 0.5);
+  }
+}
+.form__label {
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: $font-size-small;
+  line-height: 25px;
+  color: $san-juan-blue;
+  user-select: none;
+}
+
+.form__label .form__checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form__checkbox-span {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgba(54, 83, 107, 0.25);
+}
+
+.form__label:hover .form__checkbox ~ .form__checkbox-span {
+  background-color: rgba(54, 83, 107, 0.35);
+}
+
+.form__label .form__checkbox:checked ~ .form__checkbox-span {
+  background-color: $dark-pink;
+}
+
+.form__checkbox-span:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form__label .form__checkbox:checked ~ .form__checkbox-span:after {
+  display: block;
+}
+
+.form__checkbox-span:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form__btn {
+  font-size: $font-size-small;
+  line-height: 18px;
+  letter-spacing: -0.12px;
+  font-weight: 700;
+  color: $san-juan-blue;
+  padding: 15px 50px;
+  margin-top: 15px;
+  background-color: transparent;
+  border: 1px solid $san-juan-blue;
+  border-radius: 24px;
+  transition: color 0.3s ease,
+              background-color 0.3s ease;
+  &:hover {
+    color: $link-white;
+    background-color: #507ea2;
+  }
+  &:active {
+    color: $link-white;
+    background-color: $san-juan-blue;
+  }
+}
+
+
+
+@include breakpoint-down(1050px) {
+  .form {
+    max-width: 700px;
+    margin-bottom: 64px;
+  }
+  .form__checkbox-span {
+    top: 0;
+  }
+}
+
+@include breakpoint-down(768px) {
+  .form {
+    max-width: 445px;
+    margin-bottom: 64px;
+  }
+  .form__checkbox-span {
+    top: 10px;
+  }
+}
+
+@include breakpoint-down(768px) {
+  .form {
+    max-width: 327px;
+    margin-bottom: 64px;
+  }
+}

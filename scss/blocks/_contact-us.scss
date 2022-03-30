@@ -1,0 +1,159 @@
+.contact-us {
+  margin-top: 82px;
+}
+.contact-us__inner {
+}
+.contact-us__heading {
+  max-width: 730px;
+  font-family: $font-family-serif;
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 400;
+  color: $san-juan-blue;
+  letter-spacing: -0.43px;
+  margin: 0;
+  margin-bottom: 43px;
+}
+.contact-us__content {
+  @include flex(center, space-between)
+}
+.contact-us__right {
+  max-width: 541px;
+}
+.contact-us__right-title {
+  max-width: 445px;
+  font-family: $font-family-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(54, 83, 107, 0.75);
+  margin: 0;
+  margin-bottom: 40px;
+}
+.cotact-us__list {
+  @include list-no-style;
+  @include flex(center, space-between);
+  flex-wrap: wrap;
+  row-gap: 55px;
+}
+.contact-us__item {
+}
+.contact-us__tesla {
+  display: block;
+  width: 130px;
+  height: 17px;
+}
+.contact-us__microsoft {
+  display: block;
+  width: 146px;
+  height: 31px;
+}
+.contact-us__hp {
+  display: block;
+  width: 141px;
+  height: 27px;
+}
+.contact-us__oracle {
+  display: block;
+  width: 132px;
+  height: 17px;
+}
+.contact-us__google {
+  display: block;
+  width: 97px;
+  height: 33px;
+}
+.contact-us__nvidia {
+  display: block;
+  width: 138px;
+  height: 26px;
+}
+
+
+
+@include breakpoint-down(1050px) {
+  .contact-us__content {
+    flex-direction: column;
+  }
+
+  .contact-us__heading {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 43px;
+  }
+
+  .contact-us__right-title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+@include breakpoint-down(768px) {
+  .contact-us__heading {
+    max-width: 573px;
+    font-size: $font-size-large;
+  }
+}
+
+@include breakpoint-down(520px) {
+  .contact-us__heading {
+    max-width: 573px;
+    font-size: 40px;
+  }
+  .cotact-us__list {
+    gap: 20px;
+    row-gap: 40px;
+  }
+  .contact-us__tesla {
+    display: block;
+    width: 106px;
+    height: 14px;
+  }
+  .contact-us__microsoft {
+    display: block;
+    width: 119px;
+    height: 26px;
+  }
+  .contact-us__hp {
+    display: block;
+    width: 115px;
+    height: 22px;
+  }
+  .contact-us__oracle {
+    display: block;
+    width: 107px;
+    height: 14px;
+  }
+  .contact-us__google {
+    display: block;
+    width: 79px;
+    height: 27px;
+  }
+  .contact-us__nvidia {
+    display: block;
+    width: 112px;
+    height: 21px;
+  }
+}
+
+@include breakpoint-down(425px) {
+  .contact-us__heading {
+    max-width: 327px;
+    font-size: $font-size-bigmedium;
+    line-height: 36px;
+  }
+
+  .contact-us__right-title {
+    max-width: 327px;
+    margin-bottom: 32px;
+  }
+
+  .cotact-us__list {
+    text-align: center;
+    max-width: 280px;
+    @include flex(center, space-between);
+    gap: 40px;
+    margin: 0 auto;
+  }
+}
