@@ -33,6 +33,10 @@
     background-size: 800px;
     background-position: 50% calc(0% - 550px);
   }
+
+  .pricing-body {
+    background-position: calc(50% + 350px) calc(0% - 600px);
+  }
 }
 
 @include breakpoint-down(425px) {
