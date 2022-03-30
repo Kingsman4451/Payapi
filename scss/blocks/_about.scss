@@ -1,9 +1,8 @@
+/* ABOUT SECTION */
 .about {
   margin-top: 82px;
 }
 
-.about__inner {
-}
 .about__heading {
   font-family: $font-family-serif;
   max-width: 730px;
@@ -16,11 +15,13 @@
   margin-bottom: 71px;
   margin-left: 100px;
 }
+
 .about__list {
   max-width: 920px;
   @include list-no-style;
   margin: 0 auto;
 }
+
 .about__item {
   @include flex(flex-start, space-between);
   margin-bottom: 56px;
@@ -28,6 +29,7 @@
     margin-bottom: 0;
   }
 }
+
 .about__item-title {
   font-family:$font-family-serif;
   font-size: $font-size-bigmedium;
@@ -37,6 +39,7 @@
   color: $san-juan-blue;
   margin: 0;
 }
+
 .about__item-text {
   max-width: 635px;
   font-size: $font-size-small;
@@ -44,6 +47,7 @@
   color: $light-san-juan-blue;
   margin: 0;
 }
+
 .about__center {
   height: 500px;
   background-image: url("../../img/about-img.jpg");
@@ -52,11 +56,13 @@
   background-size: contain;
   margin-top: 100px;
 }
+
 .about__img {
   display: block;
   margin: 0 auto;
   margin-top: 100px;
 }
+
 .about__info {
   @include flex(center, space-between);
   @include list-no-style;
@@ -64,18 +70,21 @@
   margin-bottom: 72px;
   gap: 10px;
 }
+
 .about__info-item {
   width: 350px;
   padding: 16px 0;
   border-top: 1px solid rgba(54, 83, 107, 0.25);
   border-bottom: 1px solid rgba(54, 83, 107, 0.25);
 }
+
 .about__info-text {
   line-height: 28px;
   color: $san-juan-blue;
   opacity: 0.7;
   margin: 0;
 }
+
 .about__info-amount {
   font-family: $font-family-serif;
   font-size: 56px;
@@ -133,6 +142,7 @@
   .about__list {
     max-width: 670px;
   }
+
   .about__item {
     flex-direction: column;
     text-align: center;
@@ -142,6 +152,7 @@
     margin: 0 auto;
     margin-bottom: 24px;
   }
+
   .about__item-text {
     max-width: 100%;
   }
@@ -153,6 +164,7 @@
     font-size: 40px;
     margin-bottom: 40px;
   }
+
   .about__center {
     width: 100%;
     height: 375px;
